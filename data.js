@@ -15,7 +15,7 @@ class Data extends EventEmitter {
       filter: {
         isActivity: true
       },
-      sortBy: (a, b) => b.started - a.started
+      sortBy: 'started'
     })
     
     this.activities.on('change', pg => {
@@ -27,12 +27,13 @@ class Data extends EventEmitter {
         if (!this.active && pg.started && !pg.stopped) {
           out.push('ACTIVE:')
           this.active = pg
-          console.log('ACTIVE chosen')
+          // console.log('ACTIVE chosen')
         }
         out.push(pg)
         debug('-', JSON.stringify(pg, null, 2))
       }
       debug('ACTIVE ended as', JSON.stringify(this.active, null, 2))
+      this.emit('change')
     })
   }
 
