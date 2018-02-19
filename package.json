@@ -1,0 +1,29 @@
+{
+  "name": "socdb-fitness-tracker",
+  "version": "0.0.1",
+  "description": "socdb demo: a very simple fitness tracking webapp",
+  "main": "server.js",
+  "scripts": {
+    "test": "standard && tap --cov test/[a-z]*.js",
+    "demo": "node server.js --demo",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandhawke/socdb-fitness-tracker.git"
+  },
+  "author": "Sandro Hawke (http://hawke.org/sandro)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sandhawke/socdb-fitness-tracker/issues"
+  },
+  "homepage": "https://github.com/sandhawke/socdb-fitness-tracker#readme",
+  "devDependencies": {
+    "tap": "^11.1.0",
+    "tape": "^4.8.0"
+  },
+  "dependencies": {
+    "domready": "^1.0.8",
+    "eventemitter3": "^3.0.1"
+  }
+}

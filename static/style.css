@@ -1,0 +1,101 @@
+
+/* mostly we do in-line, react-style */
+
+@import 'reset.css';
+@import URL('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:400,700');
+
+/* ================================================================ */
+
+/* from http://css3buttongenerator.com/ */
+                             
+.btn {
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+
+
+/* ================================================================ */
+
+h1 {
+    font-size: 2.5em;
+    padding: 0.3em;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+
+h1 { 
+    animation: 3s slidein;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    font-family: 'Raleway', sans-serif;
+}
+
+.redline {
+    border: 1px solid red;
+}
+
+a.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    // font-weight: bold;
+}
+
+a.logo:hover {
+    background-color: #2D4262;
+}
+
+a .fa {
+    text-decoration: none;
+    color: white;
+}
+
+a .fa:hover {
+    background-color: #2D4262;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.claimButton {
+    background: #3498db;
+    background-image: linear-gradient(to bottom left, #ffffff, #cccccc);
+    border-radius: 6px;
+}
+
+.claimButton:hover {
+    background: #3cb0fd;
+    background-image: linear-gradient(to bottom left, #eeeeff, #bbbbdd);
+    // background-image: linear-gradient(to bottom left, #70d09f, #aae3c6);
+}
