@@ -2,6 +2,8 @@ This is a simple demo of socdb, as a trivial fitness activity tracker
 application.  It's a good starting point for trying out things with
 socdb.
 
+( Currently not working properly, sorry )
+
 ## Try It Online
 
 Try out the service at https://socdb.org/fitness
