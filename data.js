@@ -3,13 +3,17 @@
 const EventEmitter = require('eventemitter3')
 const datapages = require('datapages')
 const debug = require('debug')('fitness-data')
+const twitter = require('./twitter')
 
 class Data extends EventEmitter {
   constructor () {
     super()
     
-    const db = new datapages.Remote({address: 'ws://localhost:1978/'}) // window.serverAddress)
+    const db = new datapages.Remote()
+    // const db = new datapages.Remote({address: 'ws://localhost:1978/'}) // window.serverAddress)
 
+    twitter.init(db)
+    
     this.active = null
     this.activities = db.view({
       filter: {
